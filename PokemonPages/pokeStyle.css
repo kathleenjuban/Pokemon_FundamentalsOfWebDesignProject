@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Flame";
+  src: url("../Fonts/Flame-Regular.ttf");
+}
+@font-face {
+  font-family: "Flame-Bold";
+  src: url("../Fonts/Flame-Bold.ttf");
+}
+
+body {
+  font-family: Flame, Lato, sans-serif;
+  /*background-color: rgb(245, 235, 220);*/
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#logo {
+  height: 2em;
+}
+
+h1 {
+  font-family: Flame-Bold, Lato, sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#imgSection {
+  width: 30%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#imgSection img {
+  padding: 1em;
+  /*margin: 1em;*/
+  width: 90%;
+}
+
+#infoSection {
+  width: 60%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+#information {
+  padding-bottom: 5em;
+}
+
+#evolutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#evolutions div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#evolutions img {
+  width: 12em;
+  padding: 1em;
+  border: .2em solid white;
+  border-radius: 8px;
+}
+
+#evolutions {
+  float: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.waterPokemon {
+  color: #344277;
+  background-color: #ffd0ca !important;
+  background-image: url("../PokeImages/bg-image/bg-blue.png"),
+  linear-gradient(180deg, #dbf2ff 0%, #dbf2ff 322px, #bfe6ff 322px) !important;
+  background-repeat: no-repeat;
+  background-position: center 83px, 0 0 !important;
+  background-size: 100%, auto !important;}
+.grassPokemon {
+  color: #1d8053;
+  background-color: #d1e5d9 !important;
+  background-image: url("../PokeImages/bg-image/bg-green.png"),
+  linear-gradient(180deg, #e5f1ec 0%, #e5f1ec 322px, #d1e5d9 322px) !important;
+  background-repeat: no-repeat;
+  background-position: center 83px, 0 0 !important;
+  background-size: 100%, auto !important;
+}
+.firePokemon {
+  background-color: #ffd0ca !important;
+  background-image: url("../PokeImages/bg-image/bg-red.png"),
+  linear-gradient(180deg, #ffe5e2 0%, #ffe5e2 322px, #ffd0ca 322px) !important;
+  background-repeat: no-repeat;
+  background-position: center 83px, 0 0 !important;
+  background-size: 100%, auto !important;
+  color: RGB(153, 30, 0);
+}
+
+/*header Styling*/
+.homePageHeader{
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  margin: 5px;
+  align-items: center;
+  text-align: center;
+}
+.homePageHeader .headerElements{
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  margin:auto; 
+  justify-content: center;
+}
+.headerElements :first-child{
+  flex:1;
+}
+.headerElements :nth-child(2){
+  flex:1;
+}
+.headerElements :nth-child(3){
+  flex:1;
+}
+
+
+#homeText{
+  text-align: left;
+  font-size: 2em;
+  color: rgba(223, 64, 64, 0.8);
+  
+}
+.websiteTitle{
+  flex:auto
+}
+.websiteTitle>h2{
+  display: flex;
+  justify-content: center;
+}
+.logoContainer{
+  flex:auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.logoContainer:hover{
+  background-color: rgba(87, 87, 87, .1);
+}
+#imgLogo{
+  max-height: 75px;
+  max-width: 75px;
+} 
+
+
+/* NAV BAR STYLING */
+.navBar{
+  border: solid thin #eee;
+  box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.6);
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  height: 50px;
+  align-items: center;
+  border-radius: 50px;
+} 
+.navBar>span{
+  position: relative;
+  flex:1;
+  display: flex;
+  justify-content: center;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 10;
+  top: 40px; 
+  left: auto;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdown{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.button{
+  padding: 10px;
+  border-radius: 5px;
+}
+.button:hover{ 
+  background-color: rgba(0,0,0,0.2);
+}
+.fire{
+  color: rgb(153, 30, 0) !important;
+   
+}
+.water{
+  color: rgb(18, 55, 164)!important;
+  
+}
+.grass{
+  color: rgb(40, 128, 40)!important;
+  
+}
+
+/*FOOTER STYLING*/
+.footer{
+  border: solid thin #eee;
+  box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.6);
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  height: 50px;
+  align-items: center;
+  border-radius: 50px;
+  width: 99%;
+  justify-content: center;
+  text-align: center;
+}
+.footer>a{
+  margin: auto;
+}

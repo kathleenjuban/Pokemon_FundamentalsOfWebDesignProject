@@ -1,0 +1,294 @@
+body{
+    
+    font-family: Flame, Lato, sans-serif;
+    background-color: #d1e5d9 !important;
+    background-image: url("./PokeImages/bg-image/bg-green.png"),
+    linear-gradient(180deg, #e5f1ec 0%, #e5f1ec 322px, #d1e5d9 322px) !important;
+    background-repeat: no-repeat;
+    background-position: center 83px, 0 0 !important;
+    background-size: 100%, auto !important;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a>p{
+    color: black;
+}
+@font-face {
+    font-family: Flame;
+    src: url(./Fonts/Flame-Regular.ttf);
+  }
+  @font-face {
+    font-family: Flame-Bold;
+    src: url(./Fonts/Flame-Bold.ttf);
+  }
+  h1 {
+    font-family: Flame-Bold, sans-serif;
+  }
+  #oakText{
+    margin-top: 0;
+  }
+  
+  
+  /*header Styling*/
+.homePageHeader{
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
+.homePageHeader .headerElements{
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    margin:auto; 
+    justify-content: center;
+}
+.headerElements :first-child{
+    flex:1;
+}
+.headerElements :nth-child(2){
+    flex:1;
+}
+.headerElements :nth-child(3){
+    flex:1;
+}
+
+
+#homeText{
+    text-align: left;
+    font-size: 2em;
+    color: rgba(223, 64, 64, 0.8);
+    
+}
+.websiteTitle{
+    flex:auto
+}
+.websiteTitle>h2{
+    display: flex;
+    justify-content: center;
+}
+.logoContainer{
+    flex:auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logoContainer:hover{
+    background-color: rgba(87, 87, 87, .1);
+}
+#imgLogo{
+    max-height: 75px;
+    max-width: 75px;
+} 
+
+
+/* NAV BAR STYLING */
+.navBar{
+    border: solid thin #eee;
+    box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.6);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 50px;
+    align-items: center;
+    border-radius: 50px;
+} 
+.navBar>span{
+    position: relative;
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 10;
+    top: 40px; 
+    left: auto;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.button{
+    padding: 10px;
+    border-radius: 5px;
+}
+.button:hover{ 
+    background-color: rgba(0,0,0,0.2);
+}
+.fire{
+    color: rgb(153, 30, 0) !important;
+     
+}
+.water{
+    color: rgb(18, 55, 164)!important;
+    
+}
+.grass{
+    color: rgb(40, 128, 40)!important;
+    
+}
+
+
+/* PAGE CONTENT STYLING */
+.pageContainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    min-width: 830px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} 
+
+
+/*left page content*/
+.leftPageContent{
+    flex:1;
+    padding: .5%;
+    max-height: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#oakImage{
+    width: 450px;
+    height: 650px;
+}
+#section{
+    text-align: left !important;
+    background-color: rgb(247, 236, 217);
+    padding: 2%;
+    border: thin solid #eee;
+    border-radius: 10px;
+}
+
+/*left page content*/
+.rightPageContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+}
+.fireCard{
+    background-color:  rgba(255, 188, 188, 0.6);
+    color: rgb(153, 30, 0) !important;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid thin #eee;
+    margin: 3% 2%;
+    border-radius: 15px;
+    padding: 3%;
+    text-align: center;
+}
+.fireCard:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.fire-shadow {
+    box-shadow: 0 4px 8px 0 rgba(238, 29, 35, 0.6);
+}
+.fire-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(238, 29, 35, 0.6);
+}
+.waterCard{
+    background-color: rgba(191,230,255,0.6);
+    color: rgb(18, 55, 164);
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid thin #eee;
+    margin: 3% 2%;
+    border-radius: 15px;
+    padding: 3%;
+}
+.waterCard:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.water-shadow {
+    box-shadow: 0 4px 8px 0 rgba(104, 144, 240, 0.6);
+    color: rgb(18, 55, 164);
+}
+.water-shadow-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(104, 144, 240, 0.6);
+}
+.grassCard{
+    background-color: rgba(209,229,217,0.6);
+    color: rgb(40, 128, 40);
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid thin #eee;
+    margin: 3% 2%;
+    border-radius: 15px;
+    padding: 3%;
+}
+.grassCard:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.grass-shadow {
+    box-shadow: 0 4px 8px 0 rgba(136, 170, 136, 0.6);
+}
+.grass-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(136, 170, 136, 0.6);
+}
+
+
+.typeImg{
+    max-height: 150px;
+    max-width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+.typeText{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*FOOTER STYLING*/
+.footer{
+    border: solid thin #eee;
+    box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.6);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 50px;
+    align-items: center;
+    border-radius: 50px;
+    width: 99%;
+    justify-content: center;
+    text-align: center;
+}
+.footer>a{
+    margin: auto;
+}
